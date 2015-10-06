@@ -1,0 +1,98 @@
+{{ define "projects" }}
+
+<!DOCTYPE html>
+<html>
+<head>
+	{{ template "head" }}
+</head>
+<body>
+	<div id='wrap'>
+
+		{{ template "header" }}
+
+		<div id='projects'>
+			<div class='ui secondary pointing menu'>
+				<a class='active item'>All</a>
+				<a class='item'>Trending</a>
+				<a class='item'>Popular</a>
+				<a class='item'>Latest</a>
+				<div class='right menu'>
+					<div class="ui icon input">
+						<input type="text" placeholder="Search...">
+						<i class="search link icon"></i>
+					</div>
+				</div>
+			</div>
+			<div class='grid'>
+				<div class='project background' data-background='images/dummies03.jpg'>
+					<div class='caption'>
+						<h1>Project Circle Of Light</h1>
+					</div>
+				</div>
+				<div class='project background' data-background='images/dummies05.jpg'>
+					<div class='caption'>
+						<h1>Project EyeArt</h1>
+					</div>
+				</div>
+				<div class='project background' data-background='images/dummies02.jpg'>
+					<div class='caption'>
+						<h1>Project 139 Cansole</h1>
+					</div>
+				</div>
+				<div class='project background' data-background='images/dummies06.jpg'>
+					<div class='caption'>
+						<h1>Project Bedtime Stories</h1>
+					</div>
+				</div>
+				<div class='project background' data-background='images/dummies08.jpg'>
+					<div class='caption'>
+						<h1>Project Lifi</h1>
+					</div>
+				</div>
+				<div class='project background' data-background='images/dummies09.jpg'>
+					<div class='caption'>
+						<h1>Project Loop</h1>
+					</div>
+				</div>
+				<div class='project background' data-background='images/dummies11.jpg'>
+					<div class='caption'>
+						<h1>Project Chopstick Robot</h1>
+					</div>
+				</div>
+				<div class='project background' data-background='images/dummies10.jpg'>
+					<div class='caption'>
+						<h1>Project Drone</h1>
+					</div>
+				</div>
+				<div class='clear'></div>
+			</div> <!-- .ui.grid -->
+		</div> <!-- .projects -->
+
+		{{ template "footer" }}
+
+	</div> <!-- #wrap -->
+
+	{{ template "foot" }}
+
+	<script>
+		$('.ui.dropdown').dropdown();
+		$('.ui.checkbox').checkbox();
+		$('.background').background();
+		$('.yours .slides').slick({
+			arrows: false,
+			dots: false,
+			slidesToShow: 2,
+			slidesToScroll: 2,
+		});
+
+		$('.yours .icon.angle.left').click(function() {
+			$('.yours .slides').slick('slickPrev');
+		});
+		$('.yours .icon.angle.right').click(function() {
+			$('.yours .slides').slick('slickNext');
+		});
+	</script>
+</body>
+</html>
+
+{{ end }}

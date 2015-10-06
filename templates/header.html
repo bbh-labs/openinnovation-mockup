@@ -1,0 +1,28 @@
+{{ define "header" }}
+
+	<div class='header'>
+		<div class='left'>
+			<a class='title' href='/dashboard'><strong>BBH</strong>OI</a>
+			<ul class='menu'>
+				<li class='item'><a href='/projects'>Projects</a></li>
+				<li class='item'><a href='/create'>Create</a></li>
+				<li class='item'><a href='#'>Support</a></li>
+			</ul>
+		</div>
+		<div class='right'>
+			<div class='ui inline dropdown'>
+				<div class='text'>
+					<img class='ui avatar image' src='images/user.jpg' />
+					Jacky Boen
+				</div>
+				<i class='dropdown icon'></i>
+				<div class='menu'>
+					<div class='item'><a href='/profile'>Profile</a></div>
+					<div class='item'><a href='/'>Logout</a></div>
+				</div>
+			</div>
+		</div>
+		<div class='clear'></div>
+	</div>
+
+{{ end }}

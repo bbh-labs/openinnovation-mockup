@@ -1,0 +1,91 @@
+{{ define "create" }}
+
+<!DOCTYPE html>
+<html>
+<head>
+	{{ template "head" }}
+</head>
+<body>
+	<div id='wrap'>
+
+		{{ template "header" }}
+
+		<div id='create-project'>
+			<h1 class='title text-center'>Share your ideas and let's make it happen together</h1>
+			<div class='ui grid container'>
+				<div class='sixteen wide column'>
+					<div class='ui form'>
+						<div class='two fields'>
+							<div class='field'>
+								<input type='text' name='name' placeholder='Project title' />
+							</div>
+							<div class='field'>
+								<select class='ui dropdown'>
+									<option value=''>What's your project type</option>
+									<option value='official'>Official Project</option>
+									<option value='innovation'>Innovation Project</option>
+								</select>
+							</div>
+						</div>
+						<div class='field'>
+							<textarea rows='2' placeholder='Describe your idea within 140 characters.' maxlength='140'></textarea>
+						</div>
+						<div class='field'>
+							<textarea rows='4' placeholder='Tell us about your idea.'></textarea>
+						</div>
+						<label class='ui button'>Upload Images
+							<input type='file' style='display: none' /> 
+						</label>
+						<button type='submit' class='center'>Submit</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	{{ template "footer" }}
+
+	{{ template "foot" }}
+
+	<script>
+		$('.ui.dropdown').dropdown();
+		$('.ui.checkbox').checkbox();
+		$('.background').background();
+		$('.trending.slides').slick({
+			arrows: false,
+			dots: false,
+		});
+		$('.popular.slides').slick({
+			arrows: false,
+			dots: false,
+		});
+		$('.innovations .slides').slick({
+			arrows: false,
+			dots: false,
+			slidesToShow: 4,
+			slidesToScroll: 4,
+		});
+		$('.yours .slides').slick({
+			arrows: false,
+			dots: false,
+			slidesToShow: 2,
+			slidesToScroll: 2,
+		});
+
+		$('.innovations .icon.angle.left').click(function() {
+			$('.innovations .slides').slick('slickPrev');
+		});
+		$('.innovations .icon.angle.right').click(function() {
+			$('.innovations .slides').slick('slickNext');
+		});
+		$('.yours .icon.angle.left').click(function() {
+			$('.yours .slides').slick('slickPrev');
+		});
+		$('.yours .icon.angle.right').click(function() {
+			$('.yours .slides').slick('slickNext');
+		});
+	</script>
+</body>
+</html>
+
+{{ end }}

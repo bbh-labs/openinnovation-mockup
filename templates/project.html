@@ -1,0 +1,318 @@
+{{ define "project" }}
+
+<!DOCTYPE html>
+<html>
+<head>
+	{{ template "head" }}
+</head>
+<body>
+	<div id='wrap'>
+
+		{{ template "header" }}
+
+		<div id='project'>
+			<h1 class='text-center'>Project Bedtime Stories</h1>
+			<div class='ui grid container'>
+				<div class='sixteen wide column'>
+					<div class='ui secondary five item pointing menu'>
+						<a class='active item' data-tab='summary'>Summary</a>
+						<a class='item' data-tab='tasks'>Tasks</a>
+						<a class='item' data-tab='conversations'>Conversations</a>
+						<a class='item' data-tab='progress'>Progress</a>
+						<a class='item' data-tab='calendar'>Calendar</a>
+					</div>
+				</div>
+			</div>
+			<div class='summary ui active tab' data-tab='summary'>
+				<div class='ui grid container'>
+					<div class='ten wide column'>
+						<img class='responsive-img' src='images/dummies06.jpg' />
+						<div class='ui grid'>
+							<div class='four wide column'>
+								<img class='responsive-img' src='images/dummies06.jpg' />
+							</div>
+							<div class='four wide column'>
+								<img class='responsive-img' src='images/dummies06.jpg' />
+							</div>
+							<div class='four wide column'>
+								<img class='responsive-img' src='images/dummies06.jpg' />
+							</div>
+							<div class='four wide column'>
+								<img class='responsive-img' src='images/dummies06.jpg' />
+							</div>
+						</div>
+						<div class='ui grid'>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas posuere, velit ut mollis ornare, erat tortor dapibus odio, a maximus purus felis eget tortor. Fusce tempor et arcu quis pharetra. Vivamus at consectetur odio. Duis hendrerit eu lorem ut placerat. Donec dictum dictum diam, non faucibus neque varius ut. Fusce sollicitudin mi eu rhoncus luctus. Morbi tellus ligula, condimentum et dui eu, congue cursus magna. Nulla lectus arcu, interdum eget mollis et, malesuada nec turpis. Sed sed massa purus.</p>
+						</div>
+						<div class='ui grid'>
+							<div class='twelve wide column'>
+								<h1>Project Tasks</h1>
+							</div>
+							<div class='four wide column'>
+								<button class='ui button'>Add Task</button>
+							</div>
+							<div class='twelve wide column'>
+								<h3>Category Title</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas posuere, velit ut mollis ornare, erat tortor dapibus odio, a maximus purus felis eget tortor. Fusce tempor et arcu quis pharetra. Vivamus at consectetur odio.</p>
+							</div>
+							<div class='four wide column'>
+								<img class='center ui circular image' src='images/user.jpg' />
+							</div>
+							<div class='twelve wide column'>
+								<h3>Category Title</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas posuere, velit ut mollis ornare, erat tortor dapibus odio, a maximus purus felis eget tortor. Fusce tempor et arcu quis pharetra. Vivamus at consectetur odio.</p>
+							</div>
+							<div class='four wide column'>
+								<img class='center ui circular image' src='images/user.jpg' />
+							</div>
+						</div>
+					</div>
+					<div class='six wide column'>
+						<div class='row'>
+							<h3>Project Status</h3>
+							<button class='ui button'>
+								Request to join the project
+							</button>
+						</div>
+						<div class='row'>
+							<h3>Project Members</h3>
+							<div>
+								<div class='magenta left member-icon valign-wrapper'>
+									<div class='fill-width valign'>
+										<h1>ZO</h1>
+									</div>
+								</div>
+								<div class='red left member-icon valign-wrapper'>
+									<div class='fill-width valign'>
+										<h1>JB</h1>
+									</div>
+								</div>
+								<div class='blue left member-icon valign-wrapper'>
+									<div class='fill-width valign'>
+										<h1>SY</h1>
+									</div>
+								</div>
+								<div class='darkgrey left member-icon valign-wrapper'>
+									<div class='fill-width valign'>
+										<h1>+</h1>
+									</div>
+								</div>
+								<div class='clear'></div>
+							</div>
+							<button class='ui button'>
+								Start Group Chat
+							</button>
+						</div>
+						<div class='row'>
+							<h3>Project Progress</h3>
+							<canvas class='progress-graph' width='400' height='200'></canvas>
+						</div>
+						<div class='row'>
+							<h3>Project Schedule</h3>
+							<ul>
+								<li>Phase 1 10/6/2015</li>
+								<ul>
+									<li>xxx</li>
+									<li>xxx</li>
+									<li>xxx</li>
+								</ul>
+								<li>Phase 2 10/7/2015</li>
+								<ul>
+									<li>xxx</li>
+									<li>xxx</li>
+									<li>xxx</li>
+								</ul>
+								<li>Phase 3 10/8/2015</li>
+								<ul>
+									<li>xxx</li>
+									<li>xxx</li>
+									<li>xxx</li>
+								</ul>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div> <!-- tab: summary -->
+			<div class='tasks ui tab' data-tab='tasks'>
+				<div class='ui grid container'>
+					<div class='sixteen wide column'>
+						<button class='ui button'>Add Task</button>
+					</div>
+					<div class='ui grid'>
+						<div class='twelve wide column'>
+							<h3>Category title</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla gravida ante dui, et tempor mi eleifend quis. Maecenas sed augue vel metus sollicitudin mollis. Etiam tellus ligula, viverra vel justo id, iaculis semper tortor.</p>
+						</div>
+						<div class='four wide column'>
+							<div class='magenta left member-icon valign-wrapper'>
+								<div class='fill-width valign'>
+									<h1>ZO</h1>
+								</div>
+							</div>
+							<div class='darkgrey left member-icon valign-wrapper'>
+								<div class='fill-width valign'>
+									<h1>+</h1>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class='ui grid'>
+						<div class='twelve wide column'>
+							<h3>Category title</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla gravida ante dui, et tempor mi eleifend quis. Maecenas sed augue vel metus sollicitudin mollis. Etiam tellus ligula, viverra vel justo id, iaculis semper tortor.</p>
+						</div>
+						<div class='four wide column'>
+							<div class='red left member-icon valign-wrapper'>
+								<div class='fill-width valign'>
+									<h1>JB</h1>
+								</div>
+							</div>
+							<div class='darkgrey left member-icon valign-wrapper'>
+								<div class='fill-width valign'>
+									<h1>+</h1>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class='ui grid'>
+						<div class='twelve wide column'>
+							<h3>Category title</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla gravida ante dui, et tempor mi eleifend quis. Maecenas sed augue vel metus sollicitudin mollis. Etiam tellus ligula, viverra vel justo id, iaculis semper tortor.</p>
+						</div>
+						<div class='four wide column'>
+							<div class='darkgrey left member-icon valign-wrapper'>
+								<div class='fill-width valign'>
+									<h1>+</h1>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div> <!-- tab: tasks -->
+			<div class='conversations ui tab' data-tab='conversations'>
+				<div class='ui grid container'>
+					<div class='two wide column'>
+						<div class='member-icon-wrapper center'>
+							<div class='blue left member-icon valign-wrapper'>
+								<div class='fill-width valign'>
+									<h1>SY</h1>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class='fourteen wide column'>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla gravida ante dui, et tempor mi eleifend quis. Maecenas sed augue vel metus sollicitudin mollis. Etiam tellus ligula, viverra vel justo id, iaculis semper tortor.
+					</div>
+				</div>
+				<div class='ui grid container'>
+					<div class='two wide column'>
+						<div class='member-icon-wrapper center'>
+							<div class='magenta left member-icon valign-wrapper'>
+								<div class='fill-width valign'>
+									<h1>ZO</h1>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class='fourteen wide column'>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla gravida ante dui, et tempor mi eleifend quis. Maecenas sed augue vel metus sollicitudin mollis. Etiam tellus ligula, viverra vel justo id, iaculis semper tortor.
+					</div>
+				</div>
+				<div class='ui grid container'>
+					<div class='sixteen wide column'>
+						<div class='ui form'>
+							<div class='field'>
+								<textarea rows='4' placeholder='Say something'></textarea>
+								<button class='right ui button'>Post</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div> <!-- tab: conversations -->
+			<div class='progress ui tab' data-tab='progress'>
+				<div class='ui grid container'>
+					<div class='row'>
+						<canvas class='progress-graph' width='400' height='100'></canvas>
+					</div>
+					<div class='row'>
+						<ul>
+							<h3>Project Schedule</h3>
+							<li>Phase 1 10/6/2015</li>
+							<ul>
+								<li>xxx</li>
+								<li>xxx</li>
+								<li>xxx</li>
+							</ul>
+							<li>Phase 2 10/7/2015</li>
+							<ul>
+								<li>xxx</li>
+								<li>xxx</li>
+								<li>xxx</li>
+							</ul>
+							<li>Phase 3 10/8/2015</li>
+							<ul>
+								<li>xxx</li>
+								<li>xxx</li>
+								<li>xxx</li>
+							</ul>
+						</ul>
+					</div>
+				</div>
+			</div> <!-- tab: progress -->
+			<div class='calendar ui tab' data-tab='calendar'>
+				<div class='ui grid container'>
+					<div id='calendar'></div>
+				</div>
+			</div> <!-- tab: calendar -->
+		</div> <!-- .project -->
+	</div> <!-- #wrap -->
+
+	{{ template "footer" }}
+	
+	{{ template "foot" }}
+
+	<script>
+		var drawn = {};
+		var data = {
+			labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+			datasets: [
+				{
+					label: 'My Second dataset',
+					fillColor: 'rgba(151,187,205,0.2)',
+					strokeColor: 'rgba(151,187,205,1)',
+					pointColor: 'rgba(151,187,205,1)',
+					pointStrokeColor: '#fff',
+					pointHighlightFill: '#fff',
+					pointHighlightStroke: 'rgba(151,187,205,1)',
+					data: [28, 48, 40, 19, 86, 27, 90]
+				}
+			]
+		};
+
+		function drawProgressChart(tab) {
+			$(tab + " .progress-graph").each(function(index, el) {
+				var context = el.getContext('2d');
+				new Chart(context).Line(data, {
+					responsive: true,
+				});
+			});
+		}
+
+		$('.ui.dropdown').dropdown();
+		$('.ui.checkbox').checkbox();
+		$('.background').background();
+		$('.pointing.menu .item').tab({
+			onVisible: function(tab) {
+				if (tab == 'progress') {
+					drawProgressChart("."+tab);
+				} else if (tab == 'calendar') {
+					$('#calendar').fullCalendar();
+				}
+			},
+		});
+		drawProgressChart('.summary');
+	</script>
+</body>
+</html>
+
+{{ end }}

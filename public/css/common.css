@@ -1,0 +1,74 @@
+.clear {
+	clear: both;
+}
+
+.relative {
+	position: relative;
+}
+
+.absolute {
+	position: absolute;
+}
+
+.absolute.right {
+	right: 0;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+.center {
+	display: block;
+	margin: 0 auto;
+}
+
+.red { background: #C63D0F; }
+.green { background: #118C4E; }
+.blue { background: #4A96AD; }
+.purple { background: #DF3D82; }
+.darkgrey { background: #333333; }
+.magenta { background: #7D1935; }
+.teal { background: #558C89; }
+.orange { background: #FF9009; }
+
+.text-center {
+	text-align: center;
+}
+
+.text-left {
+	text-align: left;
+}
+
+.text-right {
+	text-align: right;
+}
+
+.fill-width {
+	width: 100%;
+}
+
+.valign-wrapper {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+}
+
+.valign-wrapper .valign {
+	display: block;
+}
+
+.responsive-img {
+	max-width: 100%;
+	height: auto;
+}

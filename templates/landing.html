@@ -1,0 +1,48 @@
+{{ define "landing" }}
+
+<!DOCTYPE html>
+<html>
+<head>
+	{{ template "head" }}
+</head>
+<body>
+	<div id='landing'>
+		<div class='header'>
+			<div class='left'>
+				<h3 class='title'><strong>BBH</strong>OI</h3>
+			</div>
+			<div class='right'>
+				<a class='sign-in' href='/dashboard'>Sign In</a>
+			</div>
+		</div>
+		<div class='jumbotron'>
+			<div class='text center'>
+				<h1 class='title'>OPEN INNOVATION</h1>
+				<h3 class='subtitle'>A platform for enabling collaboration between people with different disciplines.</h3>
+			</div>
+			<img class='image center' src='images/screen-dashboard.jpg' />
+		</div>
+		<div class='features'>
+			<h1 class='title text-center'>Features</h1>
+			<div class='slides'>
+				<div class='item'>
+					<h2 class='text text-center'>A platform for enabling collaboration between people with different disciplines.</h2>
+					<img class='image center' src='images/screen-dashboard.jpg' />
+				</div>
+				<div class='item'>
+					<h2 class='text text-center'>A platform for enabling collaboration between people with different disciplines.</h2>
+					<img class='image center' src='images/screen-dashboard.jpg' />
+				</div>
+			</div>
+		</div>
+	</div>
+
+	{{ template "foot" }}
+
+	<script>
+		$('.slides').slick();
+	</script>
+</body>
+</html>
+
+{{ end }}
